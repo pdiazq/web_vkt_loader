@@ -70,7 +70,7 @@
 				camera.add( dirLight.target );
 				var material = new THREE.MeshLambertMaterial( { color: 0xffffff, side: THREE.DoubleSide } );
 				var loader = new THREE.VTKLoader();
-				loader.load( "models/vtk/bunny.vtk", function ( geometry ) {
+				loader.load( "bunny.vtk", function ( geometry ) {
 					geometry.center();
 					geometry.computeVertexNormals();
 					var mesh = new THREE.Mesh( geometry, material );
